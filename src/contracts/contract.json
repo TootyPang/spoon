@@ -5,7 +5,7 @@
     "chain_symbol": "BNB",
     "chain": "BSC Testnet",
     "chain_id": 97,
-    "address": "0x5DA140BA550c3e885224eb69dA995a0AD920C273",
+    "address": "0x5da140ba550c3e885224eb69da995a0ad920c273",
     "abi": [
         {
             "inputs": [
