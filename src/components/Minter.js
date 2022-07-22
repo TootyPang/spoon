@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Web3 from "web3";
 import contract from "../contracts/contract.json";
-import Hero from "../assets/phunkhero.png";
+import Hero from "../assets/goofeez-hero.png";
 
 const initialInfoState = {
   connected: false,
@@ -36,7 +36,7 @@ function Minter() {
         const networkId = await window.ethereum.request({
           method: "net_version",
         });
-        if (networkId == _contractJSON.chain_id) {
+        if (networkId === _contractJSON.chain_id) {
           let web3 = new Web3(window.ethereum);
           setInfo((prevState) => ({
             ...prevState,
@@ -147,6 +147,7 @@ function Minter() {
         loading: true,
         status: `Minting ${mintInfo.amount}...`,
       }));
+      // eslint-disable-next-line no-unused-vars
       const txHash = await window.ethereum.request({
         method: "eth_sendTransaction",
         params: [params],
@@ -183,13 +184,16 @@ function Minter() {
   useEffect(() => {
     connectToContract(contract);
     initListeners();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
+    
     if (info.connected) {
       getSupply();
       getCost();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [info.connected]);
 
   return (
@@ -208,7 +212,7 @@ function Minter() {
               }}
             >
               <button
-                disabled={!info.connected || mintInfo.cost == "0"}
+                disabled={!info.connected || mintInfo.cost === "0"}
                 className="small_button"
                 onClick={() => updateAmount(mintInfo.amount - 1)}
               >
@@ -216,7 +220,7 @@ function Minter() {
               </button>
               <div style={{ width: 10 }}></div>
               <button
-                disabled={!info.connected || mintInfo.cost == "0"}
+                disabled={!info.connected || mintInfo.cost === "0"}
                 className="button"
                 onClick={() => mint()}
               >
@@ -224,7 +228,7 @@ function Minter() {
               </button>
               <div style={{ width: 10 }}></div>
               <button
-                disabled={!info.connected || mintInfo.cost == "0"}
+                disabled={!info.connected || mintInfo.cost === "0"}
                 className="small_button"
                 onClick={() => updateAmount(mintInfo.amount + 1)}
               >
@@ -295,6 +299,7 @@ function Minter() {
           }}
           className="_90"
           target="_blank"
+          rel="noreferrer"
           href="https://testnet.bscscan.com/address/0x5da140ba550c3e885224eb69da995a0ad920c273"
         >
           View Contract

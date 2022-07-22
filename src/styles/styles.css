@@ -1,22 +1,21 @@
 :root {
   --button-bg: #fea42e;
-  --button-active-bg: #24a13f;
+  --button-active-bg: #4ebf3e;
   --small-button-bg: #fea42e;
   --small-button-active-bg: #646464;
   --button-text: #fff;
-  --card: #b7e2ff;
+  --card: #c0dff5;
   --accountText: #fff;
-  --statusText: #444444;
-  --bg-gradient_1: #fea42e;
-  --bg-gradient_2: #000000;
-  --gradient_1: #284364;
-  --gradient_2: #101e32;
+  --statusText: #222;
+  --bg-gradient_1: #b06d6d;
+  --bg-gradient_2: #fea42e;
+  --gradient_1: #14f4ff;
+  --gradient_2: #3b5375;
   --gradient_3: #3a6fb9;
   --success: #24a13f;
   --warning: #d85226;
   --error: #ca2f24;
 }
-
 * {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 14px;
