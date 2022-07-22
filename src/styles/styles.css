@@ -1,14 +1,14 @@
 :root {
-  --button-bg: #d85226;
-  --button-active-bg: #681d9b;
-  --small-button-bg: #d85226;
+  --button-bg: #fea42e;
+  --button-active-bg: #24a13f;
+  --small-button-bg: #fea42e;
   --small-button-active-bg: #646464;
-  --button-text: #ffffff;
-  --card: #c0dff5;
-  --accountText: #ffffff;
-  --statusText: #470068;
-  --bg-gradient_1: #cae6f7;
-  --bg-gradient_2: #6a9cd0;
+  --button-text: #fff;
+  --card: #b7e2ff;
+  --accountText: #fff;
+  --statusText: #444444;
+  --bg-gradient_1: #fea42e;
+  --bg-gradient_2: #000000;
   --gradient_1: #284364;
   --gradient_2: #101e32;
   --gradient_3: #3a6fb9;
