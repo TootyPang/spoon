@@ -77,7 +77,7 @@ function App() {
       })
       .then((receipt) => {
         setFeedback(
-          "Noice, you now own a Goofeez. go visit Opensea.io to view it."
+          "Noice, you now own a Goofeez. go visit tofunft.com to view it."
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -131,7 +131,7 @@ function App() {
                   <a
                     target={"_blank"}
                     without rel="noreferrer"
-                    href={"https://opensea.io/collection/goofeez"}
+                    href={"https://tofunft.com/nft/bsc/0x66d200D17b077169bA141F4daFE2e40dcE635b04/"}
                   >
                     Opensea.io
                   </a>
