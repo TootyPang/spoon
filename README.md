@@ -1,1 +1,1 @@
-# Spoon Minter
+# Goofeez dApp
