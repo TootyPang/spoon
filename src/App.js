@@ -187,7 +187,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : "BUY 1"}
+                      {claimingNft ? "BUSY" : "Mint 1"}
                     </StyledButton>
 
                     <StyledButton
@@ -198,7 +198,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : "BUY 2"}
+                      {claimingNft ? "BUSY" : "Mint 2"}
                     </StyledButton>
 
                     <StyledButton
@@ -209,7 +209,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : "BUY 3"}
+                      {claimingNft ? "BUSY" : "Mint 3"}
                     </StyledButton>
 
                     <StyledButton
@@ -220,7 +220,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : "BUY 4"}
+                      {claimingNft ? "BUSY" : "Mint 4"}
                     </StyledButton>
                   </s.Container>
                   
