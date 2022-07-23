@@ -16,6 +16,7 @@ export const StyledButton = styled.button`
   color: #000000;
   width: 100px;
   cursor: pointer;
+  margin: 10px;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -188,7 +189,41 @@ function App() {
                     >
                       {claimingNft ? "BUSY" : "BUY 1"}
                     </StyledButton>
+
+                    <StyledButton
+                      disabled={claimingNft ? 2 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(2);
+                        getData();
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : "BUY 2"}
+                    </StyledButton>
+
+                    <StyledButton
+                      disabled={claimingNft ? 3 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(3);
+                        getData();
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : "BUY 3"}
+                    </StyledButton>
+
+                    <StyledButton
+                      disabled={claimingNft ? 4 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs(4);
+                        getData();
+                      }}
+                    >
+                      {claimingNft ? "BUSY" : "BUY 4"}
+                    </StyledButton>
                   </s.Container>
+                  
                 )}
               </>
             )}
